@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Pariwisata Yogyakarta</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">Rekomendasi Wisata Jogja</div>
+        <ul class="nav-links">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#artikel">Artikel</a></li>
+            <li><a href="#buku-tamu">Buku Tamu</a></li>
+        </ul>
+    </nav>
+
+    <section id="beranda" class="section">
+        <div class="hero-content">
+            <h1>Selamat Datang di Website Wisata Yogyakarta</h1>
+            <p>Website ini menyediakan informasi tempat wisata populer di Yogyakarta serta artikel menarik seputar budaya dan pariwisata.</p>
+            <a href="#artikel" class="btn">Lihat Artikel Wisata</a>
+        </div>
+        <div class="slider-container">
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=800&q=80" alt="Candi Prambanan">
+            </div>
+            <div class="slide fade">
+                <img src="./gambar/malioboro.jpg" alt="Malioboro">
+            </div>
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?auto=format&fit=crop&w=800&q=80" alt="Pantai Selatan">
+            </div>
+        </div>
+    </section>
+
+    <section id="profil" class="section">
+        <div class="section-title">
+            <h2>Profil Pembuat</h2>
+        </div>
+        <div class="profile-card fade-in-element" id="profile-card">
+            <img src="./gambar/foto wibu nolep.jfif" alt="Foto Profil" class="profile-img">
+            <div class="profile-info">
+                <p><strong>Nama:</strong> Fadhil Huga Wibowo</p>
+                <p><strong>Kelas:</strong> X SIJA 2</p>
+                <p><strong>Sekolah:</strong> SMKN 2 YOGYAKARTA</p>
+                <p><strong>Hobi:</strong> YTTA</p>
+                <p><strong>Skill:</strong> HTML, CSS, JavaScript (AI)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="artikel" class="section">
+        <div class="section-title">
+            <h2>5 Tempat Wisata Populer di Yogyakarta</h2>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Cari tempat wisata...">
+        </div>
+        <div class="article-grid" id="articleList">
+            <article class="card" style="background-image: url('./gambar/malioboro\ senja.jpg');">
+                <div class="card-content">
+                    <h3>1. Malioboro</h3>
+                    <p class="short-text">Jalan ikonik di pusat kota Yogyakarta yang terkenal dengan pedagang kaki lima dan suvenir.</p>
+                    <p class="full-text" style="display: none;"> Jalan Malioboro merupakan jantung nadi pariwisata dan kebudayaan di Yogyakarta. Menyusuri kawasan ikonik ini akan membawa Anda merasakan harmoni kehidupan lokal, mulai dari alunan musik jalanan yang syahdu, deretan dokar tradisional, hingga surga belanja kerajinan tangan dan batik. Tak hanya menawarkan pesona belanja, Malioboro juga menjadi tempat terbaik untuk menikmati kuliner legendaris seperti gudeg lesehan di malam hari, 
+                        menjadikannya destinasi wajib yang selalu menyimpan cerita bagi setiap pengunjungnya.</p>
+                    <button class="btn-readmore">Baca Selengkapnya</button>
+                </div>
+            </article>
+            <article class="card" style="background-image: url('https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=500&q=60');">
+                <div class="card-content">
+                    <h3>2. Candi Prambanan</h3>
+                    <p class="short-text">Kompleks candi Hindu terbesar di Indonesia yang dibangun pada abad ke-9.</p>
+                    <p class="full-text" style="display: none;"> Candi ini didedikasikan untuk Trimurti dan memiliki arsitektur yang sangat ramping dan menjulang tinggi.</p>
+                    <button class="btn-readmore">Baca Selengkapnya</button>
+                </div>
+            </article>
+            <article class="card" style="background-image: url('./gambar/pantai-parangtritis.png');">
+                <div class="card-content">
+                    <h3>3. Pantai Parangtritis</h3>
+                    <p class="short-text">Pantai yang terkenal dengan ombak besarnya dan pemandangan matahari terbenam yang indah.</p>
+                    <p class="full-text" style="display: none;"> Terletak sekitar 27 km selatan Yogyakarta, pantai ini juga erat dengan legenda Nyi Roro Kidul.</p>
+                    <button class="btn-readmore">Baca Selengkapnya</button>
+                </div>
+            </article>
+            <article class="card" style="background-image: url('./gambar/heha.webp');">
+                <div class="card-content">
+                    <h3>4. HeHa Sky View</h3>
+                    <p class="short-text">Destinasi wisata kekinian yang menawarkan pemandangan kota Yogyakarta dari ketinggian.</p>
+                    <p class="full-text" style="display: none;"> Terdapat banyak spot foto Instagramable dan restoran yang menyajikan makanan lezat dengan view memukau.</p>
+                    <button class="btn-readmore">Baca Selengkapnya</button>
+                </div>
+            </article>
+            <article class="card" style="background-image: url('./gambar/tebing\ breksi.jpg');">
+                <div class="card-content">
+                    <h3>5. Tebing Breksi</h3>
+                    <p class="short-text">Bekas tambang batu kapur yang disulap menjadi taman wisata alam yang artistik.</p>
+                    <p class="full-text" style="display: none;"> Dinding tebingnya diukir dengan relief tokoh pewayangan yang sangat indah dan detail.</p>
+                    <button class="btn-readmore">Baca Selengkapnya</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="buku-tamu" class="section">
+        <div class="section-title">
+            <h2>Buku Tamu</h2>
+            <p>Tinggalkan pesan dan saran Anda untuk kami.</p>
+        </div>
+        <div class="form-container">
+            <form id="guestForm">
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" placeholder="Masukkan nama Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Masukkan email Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="pesan">Pesan</label>
+                    <textarea id="pesan" rows="5" placeholder="Tulis pesan atau saran Anda..." required></textarea>
+                </div>
+                <button type="submit" class="btn">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Sistem Informasi Pariwisata Yogyakarta. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <button id="scrollTopBtn" title="Kembali ke atas">&#8679;</button>
+    <script src="script.js"></script>
+</body>
+</html>
