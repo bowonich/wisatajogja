@@ -28,14 +28,23 @@ if (searchInput) {
 }
 
     document.querySelectorAll(".btn-readmore").forEach((btn) => {
-    btn.addEventListener("click", function () {
+        btn.addEventListener("click", function () {
         const fullText = this.previousElementSibling;
         const isHidden = fullText.style.display === "none";
 
+        // Tampilkan atau sembunyikan teks
         fullText.style.display = isHidden ? "inline" : "none";
         this.innerText = isHidden ? "Sembunyikan" : "Baca Selengkapnya";
+
+        // Fitur Auto-Scroll ke bawah kartu
+        if (isHidden) {
+          // Gunakan setTimeout agar browser selesai memanjangkan kartu terlebih dahulu
+        setTimeout(() => {
+            this.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }, 100);
+        }
+        });
     });
-});
 
   // --- 3. FITUR BUKU TAMU: Validasi Form ---
     const guestForm = document.getElementById("guestForm");
