@@ -6,6 +6,7 @@
     <title>Sistem Informasi Pariwisata Yogyakarta</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_upward" />
 </head>
 <body>
     <nav>
@@ -25,30 +26,31 @@
             <a href="#artikel" class="btn">Lihat Artikel Wisata</a>
         </div>
         <div class="slider-container">
-            <div class="slide fade">
-                <img src="./gambar/candi pambanan.jpg" alt="Candi Prambanan">
-            </div>
-            <div class="slide fade">
-                <img src="./gambar/malioboro.jpg" alt="Malioboro">
-            </div>
-            <div class="slide fade">
-                <img src="./gambar/pantai-parangtritis.png" alt="Pantai Selatan">
-            </div>
-        </div>
+    <div class="slide fade">
+        <img src="./gambar/candi pambanan.jpg" alt="Candi Prambanan">
+        <div class="slide-text">Candi Prambanan</div>
+    </div>
+    <div class="slide fade">
+        <img src="./gambar/malioboro.jpg" alt="Jalan Malioboro">
+        <div class="slide-text">Jalan Malioboro</div>
+    </div>
+    <div class="slide fade">
+        <img src="./gambar/pantai-parangtritis.png" alt="Pantai Parangtritis">
+        <div class="slide-text">Pantai Parangtritis</div>
+    </div>
+</div>
     </section>
 
     <section id="profil" class="section">
         <div class="section-title">
             <h2>Profil Pembuat</h2>
         </div>
-        <div class="profile-card fade-in-element" id="profile-card">
+        <div class="profile-card" id="profile-card">
             <img src="./gambar/foto wibu nolep.jfif" alt="Foto Profil" class="profile-img">
             <div class="profile-info">
                 <p><strong>Nama:</strong> Fadhil Huga Wibowo</p>
                 <p><strong>Kelas:</strong> X SIJA 2</p>
                 <p><strong>Sekolah:</strong> SMKN 2 YOGYAKARTA</p>
-                <p><strong>Hobi:</strong> YTTA</p>
-                <p><strong>Skill:</strong> HTML, CSS, JavaScript (AI)</p>
             </div>
         </div>
     </section>
@@ -150,7 +152,9 @@
             <p>&copy; 2026 Sistem Informasi Pariwisata Yogyakarta|Dhilzz|All Rights Reserved.</p>
         </div>
     </footer>
-    <button id="scrollTopBtn" title="Kembali ke atas">&#8679;</button>
+    <button id="scrollTopBtn" title="Kembali ke atas">  
+        <span class="material-symbols-outlined">arrow_upward</span> 
+    </button>
     <script src="script.js"></script>
 </body>
 </html>
